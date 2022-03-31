@@ -102,20 +102,14 @@ h2 {
 
 }
 
-.firstbtn:hover {
-  /*カーソルを当てたとき*/
-  background: rgba(255, 255, 255, 0.3);
-  /*背景を半透明に*/
-}
-
 #case-div {
   margin: 0 auto;
+  max-width: 1240px;
 }
 
 .case {
   background-image: url(../image/headingback.png);
   background-position: center;
-
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -130,15 +124,14 @@ h2 {
 .h2-visit {
   color: red;
   margin-bottom: 10px;
-
 }
 
 .h2-quiztion {
   color: white;
   background-color: black;
-  opacity: 0.8;
   margin-bottom: 0px;
   font-size: clamp(1.5rem, 3vw, 3.5rem);
+  padding: 0.9rem 0rem;
 }
 
 .h2-quiztion span {
@@ -148,7 +141,7 @@ h2 {
 .anser {
   color: white;
   background-color: blue;
-  opacity: 0.8;
+  opacity: 0.9;
   padding: 3vw 2vw;
   border: solid;
   border-color: #ffffff;
@@ -701,12 +694,13 @@ a.btn-custom01:after {
   .feeling-image {
     width: 90%;
   }
+}
+@media (mix-width: 1250px) {
 
   .br-1250 {
     display: none;
   }
 }
-
 /* 768px以上（PC用） */
 
 @media (min-width: 460px) {
