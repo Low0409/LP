@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+.p-support {
+  padding: 0px 20px;
+}
 .heading03 {
   display: flex;
   justify-content: center;
@@ -58,6 +60,7 @@
 
 #A-description {
   padding: 0px 20px 20px 20px;
+  font-weight: 900;
 }
 
 .san_box {
@@ -214,7 +217,7 @@ h2 {
   background-color: black;
   margin-bottom: 0px;
   font-size: clamp(1.5rem, 3vw, 3.5rem);
-  padding: 0.9rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 .h2-quiztion span {
@@ -320,7 +323,8 @@ header {
 }
 
 .div-hf24-merit>div:nth-of-type(1) {
-  background-image: url(../image/point_01.jpg);
+  /* background-image: url(../image/point_01.jpg); */
+  background-image: url(../image/出勤前.jpg);
   background-size: cover;
 }
 
@@ -330,7 +334,7 @@ header {
 }
 
 .div-hf24-merit>div:nth-of-type(3) {
-  background-image: url(../image/point_03.jpg);
+  background-image: url(../image/salespoint_01.jpg);
   background-size: cover;
 }
 
@@ -430,7 +434,7 @@ p>span {
 .s_01 .accordion_one {
   max-width: 1024px;
   margin: 0 auto;
-  
+
 }
 
 .s_01 .accordion_one .accordion_header {
@@ -792,6 +796,13 @@ a.btn-custom01:after {
 
 /* 768px以上（PC用） */
 @media (min-width: 768px) {
+  #image-support {
+    width: 90%;
+  }
+
+  .p-support {
+    margin: 0vw 9vw;
+  }
 
   #img-plan {
     width: 70%;
