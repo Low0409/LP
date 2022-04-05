@@ -1,23 +1,63 @@
 @charset "utf-8";
-.div-test{
+
+.div-test {
   background-color: rgb(17, 17, 17);
 }
-.machine-text{
+
+.machine-text {
   position: absolute;
   width: 100%;
   left: 0;
   text-align: center;
-  background: -webkit-linear-gradient(0deg, #7b93ff, #00ffd0);
+  background: -webkit-linear-gradient(150deg, #7b93ff, #00ffd0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  top: 20%;
+  top: 17%;
   font-size: 5em;
   font-weight: 1000;
-  box-shadow: #000 0 0 10px;
+  /* box-shadow: rgb(0, 0, 0) 0 0 5px; */
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
+
+.machine-text span {
+  font-size: 1.5em;
+}
+
+#free-weight {
+  background: -webkit-linear-gradient(150deg, #979797, #000000);
+  -webkit-background-clip: text;
+}
+
+#selec {
+  background: -webkit-linear-gradient(150deg, #ffffff, #008cff);
+  -webkit-background-clip: text;
+}
+
+#cable-station {
+  background: black;
+  background-image:
+    repeating-linear-gradient(-45deg,
+      #fff, rgb(83, 83, 83) 1px,
+      transparent 0, transparent 14px);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+#hydraulic {
+  background: -webkit-linear-gradient(150deg, #ffffff, #ffa600);
+  -webkit-background-clip: text;
+}
+
+#stretch {
+  background: -webkit-linear-gradient(150deg, #ffffff, #b8ffa6);
+  -webkit-background-clip: text;
+
+}
+
 .p-support {
   padding: 0px 20px;
 }
+
 .heading03 {
   display: flex;
   justify-content: center;
@@ -27,6 +67,7 @@
   text-align: center;
   margin-bottom: 0px;
 }
+
 .heading03::before,
 .heading03::after {
   content: '';
@@ -215,6 +256,7 @@ h2 {
   font-weight: bold;
   text-align: center;
 }
+
 /* 料金表 */
 
 table {
@@ -230,13 +272,16 @@ table tr {
   padding: .35em;
   border: 2px solid #eee;
 }
-table tr:last-child{
+
+table tr:last-child {
   border: none;
 }
-table th{
+
+table th {
   padding: 1.2em 0.7em;
   border-right: 2px solid #fff;
 }
+
 table td {
   padding: 1.2em 0.7em;
   border-right: 2px solid #eee;
@@ -244,57 +289,69 @@ table td {
   font-size: 1.3em;
   font-weight: 900;
 }
+
 table th {
   font-size: 1.1em;
 }
-table thead tr{
+
+table thead tr {
   background-color: #50535d;
-  color:#fff;
+  color: #fff;
 }
+
 table tbody th {
-    border-right: 2px solid #eee;
+  border-right: 2px solid #eee;
 }
+
 th.non {
-    border-right: none;
+  border-right: none;
 }
-.txt{
-   text-align: left;
-   font-size: .85em;
+
+.txt {
+  text-align: left;
+  font-size: .85em;
 }
-.price{
+
+.price {
   color: #000;
   font-weight: bold;
-  font-size:1.3em
+  font-size: 1.3em
 }
+
 .price span {
-    font-size: .6em;
+  font-size: .6em;
 }
-.red_bk{
-  background:#e81010;
+
+.red_bk {
+  background: #e81010;
 }
-.red-txt{
-  color:#e81010;
-  font-size:1.5em;
+
+.red-txt {
+  color: #e81010;
+  font-size: 1.5em;
 }
-.btn{
-  background:#e81010;
+
+.btn {
+  background: #e81010;
   /* border: 2px solid #e81010; */
-  color:#fff;
+  color: #fff;
   padding: 1em;
-  border-radius:20px;
-  display:block;
-  text-decoration:none;
-  font-size:.8em
+  border-radius: 20px;
+  display: block;
+  text-decoration: none;
+  font-size: .8em
 }
-.btn:hover{
+
+.btn:hover {
   background: #fff;
   border: 2px solid #e81010;
   color: #e81010;
   transition: .2s;
 }
+
 table .btnarea td {
   padding: .2em .5em;
-  border-right:none
+  border-right: none
 }
 
 /* 料金表 */
@@ -783,9 +840,11 @@ a.btn-custom01:after {
   table {
     width: 100%;
   }
-  th{
+
+  th {
     padding: 0px 0px;
   }
+
   #h2-benefit {
     font-size: 2.5rem;
   }
@@ -948,16 +1007,19 @@ a.btn-custom01:after {
   .case {
     font-size: 26px;
   }
-  .img100{
+
+  .img100 {
     width: 100%;
   }
 }
+
 @media (max-width: 565px) {
-  .machine-text{
-    top: 30%;
+  .machine-text {
+    top: 20%;
     font-size: 3em;
   }
 }
+
 @media (min-width: 460px) {
   .br-460 {
     display: none;
