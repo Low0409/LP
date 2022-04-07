@@ -4,6 +4,57 @@
   background-color: rgb(17, 17, 17);
 }
 
+.none-slide {
+  width: 90%;
+}
+.swiper-pagination{
+  margin-top: 1vw;
+  position: relative;
+}
+.div-flex {
+  display: flex;
+}
+
+.p-machine-type-eng {
+  padding: 0px;
+}
+
+#title-cardio {
+  color: rgb(0, 238, 255);
+}
+
+#title-PlateRorded {
+  color: rgb(255, 67, 67);
+}
+
+#title-Hydraulic {
+  color: rgb(255, 231, 93);
+}
+#title-CableStation{
+  color: rgb(231, 231, 231);
+}
+#title-Selectorized{
+  color: rgb(224, 158, 255);
+}
+#title-Stretch{
+  color: rgb(108, 255, 127);
+}
+.p-machine-type-ja {
+  font-size: 0.9em;
+}
+
+.p-machine-type-ja {
+  padding: 0px;
+}
+
+.p-machine-description {
+  padding: 0px;
+}
+
+.swiper-slide .s-four-box {
+  animation: slideFromRightBox 1.0s ease 0s 1 normal;
+}
+
 .machine-text {
   position: absolute;
   width: 100%;
@@ -17,20 +68,30 @@
   font-weight: 1000;
   /* box-shadow: rgb(0, 0, 0) 0 0 5px; */
   -webkit-text-stroke: 1px rgb(0, 0, 0);
+  font-style: italic;
+
 }
 
 .machine-text span {
   font-size: 1.5em;
 }
 
+#cardio {
+  text-shadow: rgb(115, 234, 255) 0 0 20px;
+
+}
+
 #free-weight {
-  background: -webkit-linear-gradient(150deg, #979797, #000000);
+  background: -webkit-linear-gradient(150deg, #000000, #000000);
   -webkit-background-clip: text;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  text-shadow: rgb(255, 0, 0) 0 0 20px;
 }
 
 #selec {
-  background: -webkit-linear-gradient(150deg, #ffffff, #008cff);
+  background: -webkit-linear-gradient(150deg, #ffffff, #cc00ff);
   -webkit-background-clip: text;
+  text-shadow: rgb(245, 134, 255) 0 0 20px;
 }
 
 #cable-station {
@@ -41,14 +102,18 @@
       transparent 0, transparent 14px);
   -webkit-background-clip: text;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 0 0 20px;
+
 }
 
 #hydraulic {
   background: -webkit-linear-gradient(150deg, #ffffff, #ffa600);
   -webkit-background-clip: text;
+  text-shadow: rgb(255, 238, 0) 0 0 20px;
 }
 
 #stretch {
+  text-shadow: rgb(101, 255, 81) 0 0 20px;
   background: -webkit-linear-gradient(150deg, #ffffff, #b8ffa6);
   -webkit-background-clip: text;
 
@@ -95,11 +160,14 @@
 
 .s-four-wrap {
   position: relative;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
 }
+#gym-slide{
+  max-width: 700px;
 
+}
 .heading {
   padding: 5px 5px 5px 42px;
   background: linear-gradient(#77c3df, #0f50db);
@@ -164,6 +232,15 @@
   left: 0;
   text-align: center;
   color: white;
+}
+
+.s-four-box {
+  bottom: 0;
+  height: 30%;
+  padding: 10px 10px 20px 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: left;
 }
 
 .heading06 {
@@ -949,8 +1026,19 @@ a.btn-custom01:after {
   .feeling-image {
     width: 90%;
   }
-}
 
+  .machine-text {
+    font-size: 4em;
+  }
+  .p-machine-description{
+    font-size: 17px;
+  }
+}
+@media (max-width: 1000px) {
+  .p-machine-description{
+    font-size: 14px;
+  }
+}
 @media (min-width: 900px) {
   .div-hf24-merit p {
     padding: 20px 150px;
@@ -992,7 +1080,7 @@ a.btn-custom01:after {
   }
 
   p {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   #quiztion {
@@ -1015,8 +1103,19 @@ a.btn-custom01:after {
 
 @media (max-width: 565px) {
   .machine-text {
-    top: 20%;
+    top: 0%;
     font-size: 3em;
+  }
+  .p-machine-description{
+    font-size: 12px;
+  }
+  .s-four-box {
+    padding: 2px;
+    height: 35%;
+  }
+
+  .machine-text {
+    padding-top: 5px;
   }
 }
 

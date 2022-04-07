@@ -86,7 +86,15 @@
                 <div class="s-four-wrap">
                     <img src="./image/machine/cardio.PNG" alt="有酸素マシン一覧" class="img100">
                     <div class="div-test">
-                        <p class="machine-text">有酸素マシン<br><span>20</span>種</p>
+                        <p class="machine-text" id="cardio">有酸素マシン<br><span>20</span>種</p>
+                    </div>
+                    <div class="s-four-box">
+                        <div class="div-flex" id="title-cardio">
+                            <p class="p-machine-type-eng">Cardio</p>
+                            <p class="p-machine-type-ja">-カーディオマシン-</p>
+                        </div>
+                        <p class="p-machine-description">脂肪を効果的に燃焼させる有酸素運動に特化したマシンです。郊外での天候に左右されることなく、効果的に運動することが可能です。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -94,18 +102,40 @@
                 <div class="s-four-wrap">
                     <img src="./image/machine/freeweights.PNG" alt="フリーウェイト一覧" class="img100">
                     <p class="machine-text" id="free-weight">フリーウェイト<br><span>37</span>種</p>
+                    <div class="s-four-box">
+                        <div class="div-flex" id="title-PlateRorded">
+                            <p class="p-machine-type-eng">Plate Rorded</p>
+                            <p class="p-machine-type-ja">-フリーウエイト-</p>
+                        </div>
+                        <p class="p-machine-description">お好みの重さのプレートをセットし、本格的に筋肉を鍛えるトレーニングを行うことができます。</p>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" data-swiper-autoplay="4000">
                 <div class="s-four-wrap">
                     <img src="./image/machine/selectarize.PNG" alt="セレクタライズ一覧" class="img100">
                     <p class="machine-text" id="selec">セレクタライズ<br><span>66</span>種</p>
+                    <div class="s-four-box">
+                        <div class="div-flex" id="title-Selectorized">
+                            <p class="p-machine-type-eng">Selectorized</p>
+                            <p class="p-machine-type-ja">-セレクタライズマシン-</p>
+                        </div>
+                        <p class="p-machine-description">脂肪を効果的に燃焼させる有酸素運動に特化したマシンです。郊外での天候に左右されることなく、効果的に運動することが可能です。
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" data-swiper-autoplay="4000">
                 <div class="s-four-wrap">
                     <img src="./image/machine/hydraulic1.PNG" alt="油圧式マシン一覧" class="img100">
                     <p class="machine-text" id="hydraulic">油圧式マシン<br><span>8</span>種</p>
+                    <div class="s-four-box">
+                        <div class="div-flex" id="title-Hydraulic">
+                            <p class="p-machine-type-eng">Hydraulic</p>
+                            <p class="p-machine-type-ja">-油圧式マシン-</p>
+                        </div>
+                        <p class="p-machine-description">過重な重りがなく、使う人の力に応じてなめらかに動くのできわめて安全性が高く、体にやさしいマシンです。</p>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" data-swiper-autoplay="4000">
@@ -113,12 +143,28 @@
                     <img src="./image/machine/cable-station.PNG" alt="MultiGym and
                     Cable Station一覧" class="img100">
                     <p class="machine-text" id="cable-station">ケーブルマシン<br><span>13</span>種</p>
+                    <div class="s-four-box">
+                        <div class="div-flex" id="title-CableStation">
+                            <p class="p-machine-type-eng">MultiGym&CableStation</p>
+                            <p class="p-machine-type-ja">-マルチジム＆ケーブルステーション-</p>
+                        </div>
+                        <p class="p-machine-description">
+                            全身の筋肉を安全に効果的に鍛え、引き締まったスリムな体づくりから、たくましい体づくりまで、目的に応じたトレーニングを行うことができます。</p>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide" data-swiper-autoplay="4000">
                 <div class="s-four-wrap">
                     <img src="./image/machine/stretch.PNG" alt="ストレッチマシン一覧" class="img100">
                     <p class="machine-text" id="stretch">ストレッチマシン<br><span>15</span>種</p>
+                    <div class="s-four-box">
+                        <div class="div-flex" id="title-Stretch">
+                            <p class="p-machine-type-eng">Core & Stretch</p>
+                            <p class="p-machine-type-ja">-コアなマシンたち-</p>
+                        </div>
+                        <p class="p-machine-description">
+                            トレーナーやパートナーがいなくても正しくストレッチングをすることができる「ストレッチトレーナー」など、その他にも豊富に取り揃えています。</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,6 +173,8 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
+    <div class="swiper-pagination"></div>
+
     <p class="p-visit">マシンの画像は一部になります。</p>
 
 
@@ -494,13 +542,13 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide" data-swiper-autoplay="4000">
-                <div class="s-four-wrap">
+                <div class="s-four-wrap gym-slide">
                     <img src="./image/gym-image/sample1.jpg" class="swiper-img" alt="">
                     <span class="s-four-text">フリーウェイトエリア</span>
                 </div>
             </div>
             <div class="swiper-slide" data-swiper-autoplay="4000">
-                <div class="s-four-wrap">
+                <div class="s-four-wrap gym-slide">
                     <img src="./image/gym-image/sample2.jpg" class="swiper-img" alt="">
                     <span class="s-four-text">有酸素マシンエリア</span>
                 </div>
@@ -544,6 +592,11 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
         loop: true,
         speed: 1000,
         grabCursor: true
@@ -573,6 +626,7 @@
             $(this).toggleClass("open");
         });
     });
+
 </script>
 
 </html>
