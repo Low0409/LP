@@ -7,10 +7,12 @@
 .none-slide {
   width: 90%;
 }
-.swiper-pagination{
+
+.swiper-pagination {
   margin-top: 1vw;
   position: relative;
 }
+
 .div-flex {
   display: flex;
 }
@@ -30,15 +32,19 @@
 #title-Hydraulic {
   color: rgb(255, 231, 93);
 }
-#title-CableStation{
+
+#title-CableStation {
   color: rgb(231, 231, 231);
 }
-#title-Selectorized{
-  color: rgb(224, 158, 255);
+
+#title-Selectorized {
+  color: rgb(9, 255, 0);
 }
-#title-Stretch{
+
+#title-Stretch {
   color: rgb(108, 255, 127);
 }
+
 .p-machine-type-ja {
   font-size: 0.9em;
 }
@@ -51,9 +57,6 @@
   padding: 0px;
 }
 
-.swiper-slide .s-four-box {
-  animation: slideFromRightBox 1.0s ease 0s 1 normal;
-}
 
 .machine-text {
   position: absolute;
@@ -67,13 +70,13 @@
   font-size: 5em;
   font-weight: 1000;
   /* box-shadow: rgb(0, 0, 0) 0 0 5px; */
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
   font-style: italic;
 
 }
 
 .machine-text span {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 #cardio {
@@ -89,9 +92,9 @@
 }
 
 #selec {
-  background: -webkit-linear-gradient(150deg, #ffffff, #cc00ff);
+  background: -webkit-linear-gradient(150deg, #868686, #999999);
   -webkit-background-clip: text;
-  text-shadow: rgb(245, 134, 255) 0 0 20px;
+  text-shadow: rgb(9, 255, 0) 0 0 20px;
 }
 
 #cable-station {
@@ -164,10 +167,12 @@
   margin: 0 auto;
   overflow: hidden;
 }
-#gym-slide{
+
+#gym-slide {
   max-width: 700px;
 
 }
+
 .heading {
   padding: 5px 5px 5px 42px;
   background: linear-gradient(#77c3df, #0f50db);
@@ -633,6 +638,16 @@ p>span {
   height: 100px;
 }
 
+/* tuika */
+
+.swiper-slide-active .s-four-text {
+  animation: slideFromRight 1.5s ease 0s 1 normal;
+}
+
+.swiper-slide-active .s-four-box {
+  animation: slideFromRightBox 1.0s ease 0s 1 normal;
+}
+/* tuika */
 
 .Text-Span {
   position: relative;
@@ -1030,15 +1045,18 @@ a.btn-custom01:after {
   .machine-text {
     font-size: 4em;
   }
-  .p-machine-description{
+
+  .p-machine-description {
     font-size: 17px;
   }
 }
+
 @media (max-width: 1000px) {
-  .p-machine-description{
+  .p-machine-description {
     font-size: 14px;
   }
 }
+
 @media (min-width: 900px) {
   .div-hf24-merit p {
     padding: 20px 150px;
@@ -1106,9 +1124,11 @@ a.btn-custom01:after {
     top: 0%;
     font-size: 3em;
   }
-  .p-machine-description{
+
+  .p-machine-description {
     font-size: 12px;
   }
+
   .s-four-box {
     padding: 2px;
     height: 35%;
