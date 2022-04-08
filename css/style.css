@@ -66,17 +66,17 @@
   background: -webkit-linear-gradient(150deg, #7b93ff, #00ffd0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  top: 17%;
+  top: 10%;
   font-size: 5em;
   font-weight: 1000;
   /* box-shadow: rgb(0, 0, 0) 0 0 5px; */
-  -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   font-style: italic;
 
 }
 
 .machine-text span {
-  font-size: 1.6em;
+  font-size: 1.5em;
 }
 
 #cardio {
@@ -92,27 +92,22 @@
 }
 
 #selec {
-  background: -webkit-linear-gradient(150deg, #868686, #999999);
+  background: -webkit-linear-gradient(150deg, #00ff0d, #00ff95);
   -webkit-background-clip: text;
-  text-shadow: rgb(9, 255, 0) 0 0 20px;
+  text-shadow: rgb(255, 255, 255) 0 0 3px;
 }
 
 #cable-station {
-  background: black;
-  background-image:
-    repeating-linear-gradient(-45deg,
-      #fff, rgb(83, 83, 83) 1px,
-      transparent 0, transparent 14px);
+  background: -webkit-linear-gradient(150deg, #627a7a, #000000);
   -webkit-background-clip: text;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
-  text-shadow: rgb(0, 0, 0) 0 0 20px;
+  text-shadow: rgb(238, 255, 0) 0 0 3px;
 
 }
 
 #hydraulic {
   background: -webkit-linear-gradient(150deg, #ffffff, #ffa600);
   -webkit-background-clip: text;
-  text-shadow: rgb(255, 238, 0) 0 0 20px;
+  text-shadow: rgb(255, 153, 0) 0 0 2px;
 }
 
 #stretch {
@@ -647,6 +642,7 @@ p>span {
 .swiper-slide-active .s-four-box {
   animation: slideFromRightBox 1.0s ease 0s 1 normal;
 }
+
 /* tuika */
 
 .Text-Span {
@@ -801,6 +797,10 @@ p>span {
     width: 30px;
     height: 30px;
     margin-top: -15px;
+  }
+
+  .machine-text {
+    padding: 0px;
   }
 
 }
@@ -1062,7 +1062,11 @@ a.btn-custom01:after {
     padding: 20px 150px;
   }
 }
-
+@media (max-width: 865px) {
+  .machine-text {
+    font-size: 3.5em;
+  }
+}
 /* 768px以上（PC用） */
 @media (min-width: 768px) {
   #image-support {
@@ -1121,8 +1125,7 @@ a.btn-custom01:after {
 
 @media (max-width: 565px) {
   .machine-text {
-    top: 0%;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .p-machine-description {
@@ -1136,6 +1139,12 @@ a.btn-custom01:after {
 
   .machine-text {
     padding-top: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .machine-text {
+    font-size: 2em;
   }
 }
 
