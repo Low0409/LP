@@ -13,6 +13,11 @@
   position: relative;
 }
 
+.slide2 {
+  position: absolute;
+
+}
+
 .div-flex {
   display: flex;
 }
@@ -30,11 +35,11 @@
 }
 
 #title-Hydraulic {
-  color: rgb(255, 231, 93);
+  color: rgb(255, 123, 0);
 }
 
 #title-CableStation {
-  color: rgb(231, 231, 231);
+  color: rgb(229, 255, 0);
 }
 
 #title-Selectorized {
@@ -80,15 +85,15 @@
 }
 
 #cardio {
-  text-shadow: rgb(115, 234, 255) 0 0 20px;
+  text-shadow: rgb(115, 234, 255) 0 0 10px;
 
 }
 
 #free-weight {
-  background: -webkit-linear-gradient(150deg, #000000, #000000);
+  background: -webkit-linear-gradient(150deg, #333333, #000000);
   -webkit-background-clip: text;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
-  text-shadow: rgb(255, 0, 0) 0 0 20px;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  text-shadow: rgb(255, 48, 48) 0 0 10px;
 }
 
 #selec {
@@ -107,11 +112,11 @@
 #hydraulic {
   background: -webkit-linear-gradient(150deg, #ffffff, #ffa600);
   -webkit-background-clip: text;
-  text-shadow: rgb(255, 153, 0) 0 0 2px;
+  text-shadow: rgb(255, 183, 76) 0 0 10px;
 }
 
 #stretch {
-  text-shadow: rgb(101, 255, 81) 0 0 20px;
+  text-shadow: rgb(101, 255, 81) 0 0 10px;
   background: -webkit-linear-gradient(150deg, #ffffff, #b8ffa6);
   -webkit-background-clip: text;
 
@@ -227,7 +232,7 @@
 
 .s-four-text,
 .s-four-box {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   left: 0;
   text-align: center;
@@ -472,6 +477,16 @@ table .btnarea td {
   text-align: center;
 }
 
+.div-campaign {
+  text-align: center;
+  /* width: 100%;*/
+}
+
+.image-campaign {
+  margin-top: 5vw;
+  max-width: 900px;
+}
+
 #quiztion {
   background-image: url(../image/dumbbell.JPG);
   background-size: cover;
@@ -539,12 +554,10 @@ header {
 
 .div-hf24-merit>div:nth-of-type(even) {
   background-color: #0f50db;
-  /*skew*/
   transform: skewY(-5deg);
 }
 
 .div-hf24-merit>div:nth-of-type(even)>section {
-  /*skew*/
   transform: skewY(5deg);
   /*flex*/
   display: flex;
@@ -555,7 +568,7 @@ header {
 
 .div-hf24-merit>div:nth-of-type(1) {
   /* background-image: url(../image/point_01.jpg); */
-  background-image: url(../image/出勤前.jpg);
+  background-image: url(../image/worker.jpg);
   background-size: cover;
 }
 
@@ -788,6 +801,16 @@ p>span {
   margin: 0;
 }
 
+#div-futter {
+  display: flex;
+  justify-content: center;
+}
+
+dt {
+  background-color: gray;
+  color: white;
+}
+
 @media screen and (max-width: 1024px) {
   .s_01 .accordion_one .accordion_header {
     font-size: 18px;
@@ -929,6 +952,10 @@ a.btn-custom01:after {
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
 
+  #free-weight {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+  }
+
   table {
     width: 100%;
   }
@@ -1055,6 +1082,9 @@ a.btn-custom01:after {
   .p-machine-description {
     font-size: 14px;
   }
+  #div-futter{
+    display: block;
+  }
 }
 
 @media (min-width: 900px) {
@@ -1062,11 +1092,13 @@ a.btn-custom01:after {
     padding: 20px 150px;
   }
 }
+
 @media (max-width: 865px) {
   .machine-text {
     font-size: 3.5em;
   }
 }
+
 /* 768px以上（PC用） */
 @media (min-width: 768px) {
   #image-support {
