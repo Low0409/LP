@@ -807,17 +807,30 @@ p>span {
   width: 70%;
   margin: 0 auto;
 }
-.div-futter-child{
+
+.div-futter-child {
   flex-grow: 1;
 }
-#div-gym-title{
+/* parent */
+#div-gym-title { 
   display: flex;
   justify-content: center;
   width: 100%;
 }
-#gym-img{
-  width: 50%;
+
+#gym-img {
+  width: 30%;
+  filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+
 }
+
+#gym-img::after {
+  background-image: linear-gradient(rgb(88, 195, 214), rgb(8, 42, 87));
+  filter: blur(20px);
+  transform: translateY(10px) scale(1.1);
+  mix-blend-mode: color-burn;
+}
+
 #gym-name {
   padding: 0px;
   border-bottom: 3px solid rgb(0, 89, 255);
@@ -984,6 +997,10 @@ a.btn-custom01:after {
 
 .p-visit {
   text-align: center;
+}
+
+#flex {
+  display: flex;
 }
 
 /* 767px以下（スマホ用）*/
@@ -1197,9 +1214,11 @@ a.btn-custom01:after {
   .machine-text {
     font-size: 2.5em;
   }
+
   #div-futter {
     width: 90%;
   }
+
   .p-machine-description {
     font-size: 12px;
   }
