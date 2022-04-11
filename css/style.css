@@ -813,9 +813,11 @@ p>span {
 }
 /* parent */
 #div-gym-title { 
+  background-color: rgb(193, 248, 255);
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 3vw;
 }
 
 #gym-img {
@@ -833,8 +835,9 @@ p>span {
 
 #gym-name {
   padding: 0px;
-  border-bottom: 3px solid rgb(0, 89, 255);
-  margin-bottom: 2vw;
+  margin-top: 6vw;
+  font-size: 3rem;
+  margin-right: 5vw;
 }
 
 dt {
@@ -853,11 +856,15 @@ dt {
 
 small {
   color: white;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
-
+#div-futter-left{
+  margin-right: 1vw;
+}
+#div-futter-right{
+  margin-left: 1vw;
+}
 iframe {
-
   width: 100%;
 }
 
@@ -1005,7 +1012,10 @@ a.btn-custom01:after {
 
 /* 767px以下（スマホ用）*/
 @media (max-width: 767px) {
-
+  #gym-name {
+    margin-top: 4.5vw;
+    font-size: 2.1rem;
+  }
   #free-weight {
     -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
@@ -1115,7 +1125,9 @@ a.btn-custom01:after {
   #A-description {
     font-size: 17px;
   }
-
+  #div-futter {
+    width: 90%;
+  }
   small {
     font-size: 12px;
   }
@@ -1213,10 +1225,6 @@ a.btn-custom01:after {
 @media (max-width: 565px) {
   .machine-text {
     font-size: 2.5em;
-  }
-
-  #div-futter {
-    width: 90%;
   }
 
   .p-machine-description {
