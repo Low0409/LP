@@ -811,13 +811,14 @@ p>span {
 .div-futter-child {
   flex-grow: 1;
 }
+
 /* parent */
-#div-gym-title { 
+#div-gym-title {
   background-color: rgb(193, 248, 255);
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
 }
 
 #gym-img {
@@ -858,14 +859,22 @@ small {
   color: white;
   font-size: 1.6rem;
 }
-#div-futter-left{
+
+#div-futter-left {
   margin-right: 1vw;
 }
-#div-futter-right{
+
+#div-futter-right {
   margin-left: 1vw;
 }
+
 iframe {
   width: 100%;
+}
+
+a{
+  color: #145ae1;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1016,6 +1025,7 @@ a.btn-custom01:after {
     margin-top: 4.5vw;
     font-size: 2.1rem;
   }
+
   #free-weight {
     -webkit-text-stroke: 1px rgb(255, 255, 255);
   }
@@ -1125,9 +1135,11 @@ a.btn-custom01:after {
   #A-description {
     font-size: 17px;
   }
+
   #div-futter {
     width: 90%;
   }
+
   small {
     font-size: 12px;
   }
@@ -1223,6 +1235,15 @@ a.btn-custom01:after {
 }
 
 @media (max-width: 565px) {
+  #gym-img {
+    width: 50%;
+  }
+
+  #gym-name {
+    margin-top: 11.5vw;
+    font-size: 1.5rem;
+  }
+
   .machine-text {
     font-size: 2.5em;
   }
