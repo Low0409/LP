@@ -804,11 +804,48 @@ p>span {
 #div-futter {
   display: flex;
   justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.div-futter-child{
+  flex-grow: 1;
+}
+#div-gym-title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#gym-img{
+  width: 50%;
+}
+#gym-name {
+  padding: 0px;
+  border-bottom: 3px solid rgb(0, 89, 255);
+  margin-bottom: 2vw;
 }
 
 dt {
+  padding: 2px;
+  border-radius: 2px;
   background-color: gray;
   color: white;
+}
+
+#div-copylight {
+  background-color: #000042;
+  height: 55px;
+  text-align: center;
+
+}
+
+small {
+  color: white;
+  font-size: 1.6em;
+}
+
+iframe {
+
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1061,6 +1098,10 @@ a.btn-custom01:after {
   #A-description {
     font-size: 17px;
   }
+
+  small {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -1081,9 +1122,6 @@ a.btn-custom01:after {
 @media (max-width: 1000px) {
   .p-machine-description {
     font-size: 14px;
-  }
-  #div-futter{
-    display: block;
   }
 }
 
@@ -1159,7 +1197,9 @@ a.btn-custom01:after {
   .machine-text {
     font-size: 2.5em;
   }
-
+  #div-futter {
+    width: 90%;
+  }
   .p-machine-description {
     font-size: 12px;
   }
@@ -1171,6 +1211,10 @@ a.btn-custom01:after {
 
   .machine-text {
     padding-top: 5px;
+  }
+
+  #div-futter {
+    display: block;
   }
 }
 
