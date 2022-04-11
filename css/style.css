@@ -872,9 +872,9 @@ iframe {
   width: 100%;
 }
 
-a{
+a {
   color: #145ae1;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1095,9 +1095,8 @@ a.btn-custom01:after {
 
   .txt-area {
     background-color: #e3f1ff;
-    display: flex;
     padding: 15px;
-    margin: 10px;
+    margin: 33px;
   }
 
   .txt-area:nth-child(2n+1) {
@@ -1118,13 +1117,26 @@ a.btn-custom01:after {
     color: red;
   }
 
+  .img-area {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+
   .customer {
     width: 120px;
-    box-shadow: 5px 5px 1px 0 rgb(0 0 0 / 30%);
+    /* box-shadow: 5px 5px 1px 0 rgb(0 0 0 / 30%); 0 0 10 20*/
+    padding: 0px 20px 10px 0px;
+  }
 
+  .customer-right {
+    padding: 0px 0px 10px 20px;
   }
 
   .name {
+    padding: 0px 5px;
     text-align: center;
   }
 
