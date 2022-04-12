@@ -1052,7 +1052,7 @@ a.btn-custom01:after {
   }
 
   #img-plan {
-    width: 97%;
+    width: 100%;
   }
 
   .swiper {
@@ -1096,7 +1096,7 @@ a.btn-custom01:after {
   .txt-area {
     background-color: #e3f1ff;
     padding: 15px;
-    margin: 33px;
+    margin: 25px;
   }
 
   .txt-area:nth-child(2n+1) {
@@ -1127,12 +1127,12 @@ a.btn-custom01:after {
 
   .customer {
     width: 120px;
-    /* box-shadow: 5px 5px 1px 0 rgb(0 0 0 / 30%); 0 0 10 20*/
-    padding: 0px 20px 10px 0px;
+    box-shadow: 5px 5px rgb(59, 59, 59);
+    margin: 0px 20px 10px 0px;
   }
 
   .customer-right {
-    padding: 0px 0px 10px 20px;
+    margin: 0px 0px 10px 20px;
   }
 
   .name {
