@@ -1,4 +1,84 @@
 @charset "utf-8";
+#f-table{
+  border-collapse: separate;
+  border-spacing: 10px 0px;
+  width: 80%;
+}
+.member{
+  background-color: #000042;
+  color: white;
+}
+table td.bg-bl {
+  background: #145ae1;
+  color: white;
+}
+table td.bg-sm {
+  background: #f0f0f4;
+}
+table td.bg-gr {
+  background: #dbdbe4;
+}
+table td {
+  
+  margin: 12px;
+  line-height: 1.4;
+}
+.h2-visit {
+  font-size: 30px;
+}
+
+.txt-area {
+  background-color: #e3f1ff;
+  padding: 15px;
+  margin: 30px 15px 30px 15px;
+}
+
+.txt-area:nth-child(2n+1) {
+  flex-direction: row;
+}
+
+.txt-area:nth-child(2n) {
+  flex-direction: row-reverse;
+  background-color: #e1ffec;
+}
+
+.txt {
+  padding: 7px;
+  font-size: 1.6rem;
+}
+
+.txt-span {
+  color: red;
+}
+.fs26{
+  font-size: 2.6rem;
+}
+.fs40{
+  font-size: 4.0rem;
+}
+.img-area {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.customer {
+  width: 120px;
+  box-shadow: 5px 5px rgb(59, 59, 59);
+  margin: 0px 20px 10px 0px;
+}
+
+.customer-right {
+  margin: 0px 0px 10px 20px;
+}
+
+.name {
+  font-size: 14px;
+  padding: 1px 5px;
+  text-align: center;
+}
 
 .div-test {
   background-color: rgb(17, 17, 17);
@@ -369,7 +449,7 @@ table td {
   border-right: 2px solid #eee;
   text-align: center;
   font-size: 1.3em;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 table th {
@@ -387,11 +467,6 @@ table tbody th {
 
 th.non {
   border-right: none;
-}
-
-.txt {
-  text-align: left;
-  font-size: .85em;
 }
 
 .price {
@@ -1089,56 +1164,6 @@ a.btn-custom01:after {
     text-align: center;
   }
 
-  .h2-visit {
-    font-size: 30px;
-  }
-
-  .txt-area {
-    background-color: #e3f1ff;
-    padding: 15px;
-    margin: 30px 15px 30px 15px;
-  }
-
-  .txt-area:nth-child(2n+1) {
-    flex-direction: row;
-  }
-
-  .txt-area:nth-child(2n) {
-    flex-direction: row-reverse;
-    background-color: #e1ffec;
-  }
-
-  .txt {
-    padding: 7px;
-    font-size: 1.6rem;
-  }
-
-  .txt-span {
-    color: red;
-  }
-
-  .img-area {
-    float: left;
-  }
-
-  .right {
-    float: right;
-  }
-
-  .customer {
-    width: 120px;
-    box-shadow: 5px 5px rgb(59, 59, 59);
-    margin: 0px 20px 10px 0px;
-  }
-
-  .customer-right {
-    margin: 0px 0px 10px 20px;
-  }
-
-  .name {
-    padding: 1px 5px;
-    text-align: center;
-  }
 
   .s-four-text {
     font-size: 14px;
@@ -1185,6 +1210,25 @@ a.btn-custom01:after {
 }
 
 @media (max-width: 865px) {
+  #f-table{
+    width: 100%;
+    border-spacing: 3px 0px;
+  }
+  #f-table td {
+    padding: 10px 5px;
+  }
+  .fs26{
+    font-size: 16px;
+  }
+  .fs40{
+    font-size: 22px;
+  }
+  .fs20{
+    font-size: 11px;
+  }
+  .fs18{
+    font-size: 13px;
+  }
   .machine-text {
     font-size: 3.5em;
   }
@@ -1192,6 +1236,16 @@ a.btn-custom01:after {
 
 /* 768px以上（PC用） */
 @media (min-width: 768px) {
+  .txt-area {
+    display: flex;
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  .txt {
+    text-align: left;
+    font-size: 18px;
+  }
+
   #image-support {
     width: 90%;
   }
